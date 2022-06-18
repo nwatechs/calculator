@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="h-full md:flex justify-center items-center bg-emerald-300">
+
+    <div id="app" class="bg-slate-800 text-gray-100 md:w-[300px] w-full md:h-5/6 h-full grid grid-rows-[auto_1fr] shrink-0">
+        <div class="screen h-80 md:h-40 bg-slate-700 p-3 flex flex-col justify-center items-end">
+            <div class="exp"></div>
+            <div class="result text-3xl font-bold"></div>
+        </div>
+        <div class="numpad grid grid-cols-4 p-3 gap-3">
+            <button class="operator pi">&pi;</button>
+            <button class="operator square">x<sup>2</sup></button>
+            <button class="operator">%</button>
+            <button class="operator">/</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button class="operator">*</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button class="operator">+</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button class="equals row-start-4 row-end-6 col-start-4 col-end-5 flex items-end justify-center p-3">=</button>
+            <button>.</button>
+            <button>0</button>
+            <button class="delete">DEL</button>
+        </div>
+    </div>
+    
+    <!-- Script Below -->
+    <script src="./app.js"></script>
+</body>
+</html>
